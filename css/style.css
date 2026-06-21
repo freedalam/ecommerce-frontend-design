@@ -1,0 +1,697 @@
+/* ============================================================
+   WEEK 1 — Header & Footer
+   Exact match to Figma: Ecommerce Web Design (Alibaba style)
+   
+   Design tokens from Figma screenshots:
+   - Primary Blue : #2563EB / #1C6EE8
+   - Orange       : #FF7B24 (promo button)
+   - Teal         : #26A7A7 (secondary promo)
+   - Text Dark    : #1C1C1C
+   - Text Mid     : #505050
+   - Text Grey    : #8B96A5
+   - Border       : #E0E0E0
+   - BG Light     : #F5F5F5
+   - White        : #FFFFFF
+   - Font         : Inter (Google Fonts)
+============================================================ */
+
+/* ---------- RESET ---------- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1C1C1C;
+  background: #F5F5F5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+img { display: block; max-width: 100%; }
+button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; background: none; }
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================================
+   HEADER
+   Figma: white bg | logo left | search center | icons right
+   Height: ~64px
+============================================================ */
+.header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* --- Logo --- */
+/* Figma: blue shopping bag icon + "Brand" in blue text */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: #2563EB;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563EB;
+  letter-spacing: -0.3px;
+}
+
+/* --- Search Bar ---
+   Figma: input | "All category" dropdown | blue Search button
+   Full width between logo and icons
+*/
+.header-search {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  height: 40px;
+  border: 1.5px solid #E0E0E0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.header-search:focus-within {
+  border-color: #2563EB;
+}
+
+/* Search text input */
+.search-text-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #1C1C1C;
+  background: transparent;
+  min-width: 0;
+}
+
+.search-text-input::placeholder {
+  color: #8B96A5;
+}
+
+/* Divider between input and dropdown */
+.search-divider {
+  width: 1px;
+  background: #E0E0E0;
+  margin: 8px 0;
+  flex-shrink: 0;
+}
+
+/* Category dropdown */
+.search-category-wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 8px 0 12px;
+  gap: 4px;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.search-category-wrap select {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: #505050;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 4px;
+}
+
+.search-category-wrap .drop-arrow {
+  font-size: 10px;
+  color: #8B96A5;
+  pointer-events: none;
+}
+
+/* Blue Search button */
+.search-submit-btn {
+  background: #2563EB;
+  color: #fff;
+  border: none;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.search-submit-btn:hover {
+  background: #1D4ED8;
+}
+
+/* --- Header Right Icons ---
+   Figma: Profile | Message | Orders | My cart
+   Grey icons with labels underneath
+*/
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.header-icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #606060;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  min-width: 52px;
+  position: relative;
+}
+
+.header-icon-btn:hover {
+  background: #F5F5F5;
+  color: #2563EB;
+}
+
+.header-icon-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.header-icon-btn span {
+  font-size: 11px;
+  color: #606060;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.header-icon-btn:hover span {
+  color: #2563EB;
+}
+
+/* ============================================================
+   NAVBAR
+   Figma: white bg | ≡ All category | links | English,USD | Ship to 🇩🇪
+   Height: ~44px
+============================================================ */
+.navbar {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+/* ≡ All category button */
+.navbar-all-cat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px 0 0;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1C1C1C;
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-right: 1px solid #E0E0E0;
+  margin-right: 8px;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.navbar-all-cat:hover { color: #2563EB; }
+
+.navbar-all-cat svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* Nav links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 14px;
+  height: 44px;
+  font-size: 13px;
+  color: #505050;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #2563EB;
+  border-bottom-color: #2563EB;
+}
+
+.navbar-links a svg {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+/* Right side: language + ship to */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.navbar-right-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+  height: 44px;
+  font-size: 13px;
+  color: #505050;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  background: none;
+  transition: color 0.15s;
+}
+
+.navbar-right-btn:hover { color: #2563EB; }
+
+.navbar-right-btn svg {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+.navbar-flag {
+  width: 22px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   PAGE PLACEHOLDER (Week 1 demo content)
+============================================================ */
+.demo-area {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.demo-box {
+  background: #fff;
+  border: 2px dashed #E0E0E0;
+  border-radius: 12px;
+  padding: 80px 40px;
+}
+
+.demo-badge {
+  display: inline-block;
+  background: #EFF6FF;
+  color: #2563EB;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.demo-box h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1C1C1C;
+  margin-bottom: 10px;
+}
+
+.demo-box p {
+  font-size: 15px;
+  color: #8B96A5;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   NEWSLETTER SECTION
+   Figma: light grey bg | centered heading | email input + Subscribe btn
+============================================================ */
+.newsletter {
+  background: #EFF2F4;
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.newsletter h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1C1C1C;
+  margin-bottom: 8px;
+}
+
+.newsletter p {
+  font-size: 14px;
+  color: #505050;
+  margin-bottom: 24px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.newsletter-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  background: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px 0 0 6px;
+  padding: 0 16px;
+  height: 44px;
+}
+
+.newsletter-input-wrap svg {
+  width: 18px;
+  height: 18px;
+  stroke: #8B96A5;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.newsletter-input-wrap input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #1C1C1C;
+  background: transparent;
+  width: 100%;
+}
+
+.newsletter-input-wrap input::placeholder { color: #8B96A5; }
+
+.newsletter-btn {
+  background: #2563EB;
+  color: #fff;
+  border: none;
+  padding: 0 24px;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover { background: #1D4ED8; }
+
+/* ============================================================
+   FOOTER MAIN
+   Figma: WHITE bg | 6 columns: Brand info | About | Partnership
+          | Information | For users | Get app
+============================================================ */
+.footer-main {
+  background: #FFFFFF;
+  padding: 48px 0 40px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+/* Column 1 — Brand */
+.footer-brand .brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.footer-brand .brand-logo .logo-icon {
+  width: 32px;
+  height: 32px;
+  background: #2563EB;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-brand .brand-logo .logo-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footer-brand .brand-logo .logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563EB;
+}
+
+.footer-brand-desc {
+  font-size: 13px;
+  color: #8B96A5;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Social icons row */
+.footer-socials {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  color: #8B96A5;
+  border: none;
+}
+
+.social-icon svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.social-icon:hover {
+  background: #2563EB;
+  color: #fff;
+}
+
+/* Footer Link Columns */
+.footer-col h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C1C1C;
+  margin-bottom: 16px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 13px;
+  color: #8B96A5;
+  transition: color 0.15s;
+  line-height: 1.4;
+}
+
+.footer-col ul li a:hover { color: #2563EB; }
+
+/* Get App Column */
+.footer-app-col h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C1C1C;
+  margin-bottom: 16px;
+}
+
+.app-store-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-store-btns img {
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.app-store-btns img:hover { opacity: 0.85; }
+
+/* ============================================================
+   FOOTER BOTTOM BAR
+   Figma: light grey bg | © 2023 Ecommerce. | English flag right
+============================================================ */
+.footer-bottom {
+  background: #EFF2F4;
+  border-top: 1px solid #E0E0E0;
+  padding: 16px 0;
+}
+
+.footer-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: #8B96A5;
+}
+
+.footer-lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #505050;
+  cursor: pointer;
+}
+
+.footer-lang img {
+  width: 22px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.footer-lang svg {
+  width: 13px;
+  height: 13px;
+  stroke: #505050;
+  fill: none;
+  stroke-width: 2;
+}

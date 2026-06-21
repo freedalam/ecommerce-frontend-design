@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand — Ecommerce Store</title>
+
+  <!-- Inter font — exact font used in Figma design -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+<header class="header">
+  <div class="header-inner">
+
+    <!-- Logo: blue square bag icon + "Brand" blue text -->
+    <a class="header-logo" href="index.html">
+      <div class="logo-icon">
+        <!-- Shopping bag SVG -->
+        <svg viewBox="0 0 24 24">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+      </div>
+      <span class="logo-text">Brand</span>
+    </a>
+
+    <div class="header-search">
+      <input
+        class="search-text-input"
+        type="text"
+        id="searchInput"
+        placeholder="Search"
+        autocomplete="off"
+        aria-label="Search products"
+      />
+      <div class="search-divider"></div>
+      <div class="search-category-wrap">
+        <select id="searchCategory" aria-label="Select category">
+          <option value="">All category</option>
+          <option value="automobiles">Automobiles</option>
+          <option value="clothes">Clothes and wear</option>
+          <option value="interior">Home interiors</option>
+          <option value="tech">Computer and tech</option>
+          <option value="tools">Tools, equipments</option>
+          <option value="sports">Sports and outdoor</option>
+          <option value="pets">Animal and pets</option>
+          <option value="machinery">Machinery tools</option>
+        </select>
+        <span class="drop-arrow">&#9662;</span>
+      </div>
+      <button class="search-submit-btn" id="searchBtn" aria-label="Search">
+        Search
+      </button>
+    </div>
+
+    <div class="header-icons">
+
+      <!-- Profile -->
+      <a href="#" class="header-icon-btn" aria-label="Profile">
+        <svg viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span>Profile</span>
+      </a>
+
+      <!-- Message -->
+      <a href="#" class="header-icon-btn" aria-label="Message">
+        <svg viewBox="0 0 24 24">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+        </svg>
+        <span>Message</span>
+      </a>
+
+      <!-- Orders -->
+      <a href="#" class="header-icon-btn" aria-label="Orders">
+        <svg viewBox="0 0 24 24">
+          <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+          <rect x="9" y="3" width="6" height="4" rx="1"/>
+          <line x1="9" y1="12" x2="15" y2="12"/>
+          <line x1="9" y1="16" x2="13" y2="16"/>
+        </svg>
+        <span>Orders</span>
+      </a>
+
+      <!-- My cart -->
+      <a href="#" class="header-icon-btn" aria-label="My cart">
+        <svg viewBox="0 0 24 24">
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+        </svg>
+        <span>My cart</span>
+      </a>
+
+    </div>
+  </div>
+</header>
+
+
+<nav class="navbar" aria-label="Main Navigation">
+  <div class="navbar-inner">
+
+    <!-- Left: All Category + nav links -->
+    <div class="navbar-left">
+
+      <!-- ≡ All category -->
+      <button class="navbar-all-cat" id="allCatBtn" aria-label="All Categories">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        All category
+      </button>
+
+      <!-- Nav links -->
+      <div class="navbar-links">
+        <a href="#" class="active">Hot offers</a>
+        <a href="#">Gift boxes</a>
+        <a href="#">Projects</a>
+        <a href="#">Menu item</a>
+        <a href="#">
+          Help
+          <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="navbar-right">
+      <button class="navbar-right-btn">
+        English, USD
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <button class="navbar-right-btn">
+        Ship to
+        <img class="navbar-flag" src="assets/Layout1/Image/flags/DE@2x.png" alt="Germany" />
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+
+<main>
+  <div class="demo-area">
+    <div class="demo-box">
+      <span class="demo-badge">✅ Week 1 Complete</span>
+      <h2>Header &amp; Footer Implemented</h2>
+      <p>
+        The header with logo, search bar, category dropdown and action icons —
+        plus the full navbar, newsletter section and footer — are all built
+        to match the Figma design exactly. Scroll down to see the footer.
+      </p>
+    </div>
+  </div>
+</main>
+
+
+<section class="newsletter" aria-label="Newsletter signup">
+  <h3>Subscribe on our newsletter</h3>
+  <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+  <div class="newsletter-form">
+    <div class="newsletter-input-wrap">
+      <!-- Email icon -->
+      <svg viewBox="0 0 24 24">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+      <input
+        type="email"
+        placeholder="Email"
+        id="newsletterEmail"
+        aria-label="Email address"
+      />
+    </div>
+    <button class="newsletter-btn" id="subscribeBtn">Subscribe</button>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-grid">
+
+      <!-- Column 1: Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+          </div>
+          <span class="logo-text">Brand</span>
+        </a>
+        <p class="footer-brand-desc">
+          Best information about the company gies here but now lorem ipsum is
+        </p>
+        <!-- Social icons: Facebook | Twitter | LinkedIn | Instagram | YouTube -->
+        <div class="footer-socials">
+          <!-- Facebook -->
+          <button class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </button>
+          <!-- Twitter -->
+          <button class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </button>
+          <!-- LinkedIn -->
+          <button class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </button>
+          <!-- Instagram -->
+          <button class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:none;">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </button>
+          <!-- YouTube -->
+          <button class="social-icon" aria-label="YouTube">
+            <svg viewBox="0 0 24 24">
+              <path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#fff;"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Column 2: About -->
+      <div class="footer-col">
+        <h5>About</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Find store</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Partnership -->
+      <div class="footer-col">
+        <h5>Partnership</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Find store</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Information -->
+      <div class="footer-col">
+        <h5>Information</h5>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Money Refund</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5: For users -->
+      <div class="footer-col">
+        <h5>For users</h5>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">My Orders</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 6: Get app -->
+      <div class="footer-col footer-app-col">
+        <h5>Get app</h5>
+        <div class="app-store-btns">
+          <img src="assets/Misc/market-button.png" alt="Download on the App Store" />
+          <img src="assets/Misc/Group.png" alt="Get it on Google Play" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Bottom Bar -->
+  <!-- Figma: light grey bg | © 2023 Ecommerce. left | English + flag right -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copyright">© 2023 Ecommerce.</p>
+      <div class="footer-lang">
+        <img src="assets/Layout1/Image/flags/GB@2x.png" alt="English" />
+        English
+        <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT — Week 1 basic interactions
+============================================================ -->
+<script>
+  /* Active nav link */
+  document.querySelectorAll('.navbar-links a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('.navbar-links a').forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  /* Search on Enter key */
+  document.getElementById('searchInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      const val = this.value.trim();
+      if (val) alert('Searching: "' + val + '"\n(Product listing implemented in Week 2)');
+    }
+  });
+
+  /* Search button click */
+  document.getElementById('searchBtn').addEventListener('click', function() {
+    const val = document.getElementById('searchInput').value.trim();
+    if (val) alert('Searching: "' + val + '"\n(Product listing implemented in Week 2)');
+    else document.getElementById('searchInput').focus();
+  });
+
+  /* Newsletter subscribe */
+  document.getElementById('subscribeBtn').addEventListener('click', function() {
+    const email = document.getElementById('newsletterEmail').value.trim();
+    if (!email || !email.includes('@')) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+    alert('Thank you for subscribing! 🎉\n' + email);
+    document.getElementById('newsletterEmail').value = '';
+  });
+
+  /* All category button */
+  document.getElementById('allCatBtn').addEventListener('click', function() {
+    alert('Category menu — implemented in Week 2');
+  });
+</script>
+
+</body>
+</html>
