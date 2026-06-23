@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Brand — Mobile accessory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><div class="logo-box"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div><span class="logo-name">Brand</span></a>
+    <div class="search-bar">
+      <input class="search-input" type="text" id="searchInput" placeholder="Search" autocomplete="off"/>
+      <div class="search-sep"></div>
+      <div class="search-cat"><select><option>All category</option><option>Automobiles</option><option selected>Clothes and wear</option><option>Computer and tech</option></select><span class="arr">&#9662;</span></div>
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="header-icons">
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></a>
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span>Message</span></a>
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg><span>Orders</span></a>
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span>My cart</span></a>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="nav-left">
+      <button class="nav-allcat"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>All category</button>
+      <div class="nav-links"><a href="index.html">Hot offers</a><a href="#">Gift boxes</a><a href="#">Projects</a><a href="#" class="active">Menu item</a><a href="#">Help <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a></div>
+    </div>
+    <div class="nav-right">
+      <button class="nav-rbtn">English, USD <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <button class="nav-rbtn">Ship to <img class="nav-flag" src="assets/flags/DE@2x.png" alt="DE"/> <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span class="sep">›</span>
+  <a href="#">Clothings</a><span class="sep">›</span>
+  <a href="#">Men's wear</a><span class="sep">›</span>
+  <span class="cur">Summer clothing</span>
+</div>
+
+<div class="listing-layout">
+
+  <!-- FILTER SIDEBAR (matches web-gridview.jpg left panel) -->
+  <aside class="filter-sidebar">
+    <div class="filter-section">
+      <div class="filter-top"><h4>Category</h4><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></div>
+      <div class="filter-item"><input type="checkbox" id="c1" checked/><label for="c1">Mobile accessory</label></div>
+      <div class="filter-item"><input type="checkbox" id="c2"/><label for="c2">Electronics</label></div>
+      <div class="filter-item"><input type="checkbox" id="c3"/><label for="c3">Smartphones</label></div>
+      <div class="filter-item"><input type="checkbox" id="c4"/><label for="c4">Modern tech</label></div>
+      <span class="see-all">See all</span>
+    </div>
+    <div class="filter-section">
+      <div class="filter-top"><h4>Brands</h4><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></div>
+      <div class="filter-item"><input type="checkbox" id="b1" checked/><label for="b1">Samsung</label></div>
+      <div class="filter-item"><input type="checkbox" id="b2" checked/><label for="b2">Apple</label></div>
+      <div class="filter-item"><input type="checkbox" id="b3"/><label for="b3">Huawei</label></div>
+      <div class="filter-item"><input type="checkbox" id="b4" checked/><label for="b4">Pocco</label></div>
+      <div class="filter-item"><input type="checkbox" id="b5"/><label for="b5">Lenovo</label></div>
+      <span class="see-all">See all</span>
+    </div>
+    <div class="filter-section">
+      <div class="filter-top"><h4>Features</h4><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></div>
+      <div class="filter-item"><input type="checkbox" id="f1" checked/><label for="f1">Metallic</label></div>
+      <div class="filter-item"><input type="checkbox" id="f2"/><label for="f2">Plastic cover</label></div>
+      <div class="filter-item"><input type="checkbox" id="f3"/><label for="f3">8GB Ram</label></div>
+      <div class="filter-item"><input type="checkbox" id="f4"/><label for="f4">Super power</label></div>
+      <div class="filter-item"><input type="checkbox" id="f5"/><label for="f5">Large Memory</label></div>
+      <span class="see-all">See all</span>
+    </div>
+    <div class="filter-section">
+      <div class="filter-top"><h4>Price range</h4><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="price-inputs"><input type="number" placeholder="$ Min"/><span>—</span><input type="number" placeholder="$ Max"/></div>
+    </div>
+    <div class="filter-section">
+      <div class="filter-top"><h4>Condition</h4><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="filter-section">
+      <div class="filter-top"><h4>Ratings</h4><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="filter-section">
+      <div class="filter-top"><h4>Manufacturer</h4><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+  </aside>
+
+
+  <div>
+    <!-- Listing Header -->
+    <div class="listing-header">
+      <div class="listing-count"><strong>12,911 items</strong> in Mobile accessory</div>
+      <div class="listing-controls">
+        <div class="verified-wrap"><input type="checkbox" id="verifiedOnly"/><label for="verifiedOnly">Verified only</label></div>
+        <select class="sort-select" id="sortSelect"><option>Featured</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Newest</option></select>
+        <div class="view-toggle">
+          <button class="view-btn active" id="gridBtn" title="Grid view"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button>
+          <button class="view-btn" id="listBtn" title="List view"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="active-filters">
+      <div class="filter-tag">Samsung <button onclick="this.parentElement.remove()">×</button></div>
+      <div class="filter-tag">Apple <button onclick="this.parentElement.remove()">×</button></div>
+      <div class="filter-tag">Poco <button onclick="this.parentElement.remove()">×</button></div>
+      <div class="filter-tag">Metallic <button onclick="this.parentElement.remove()">×</button></div>
+      <div class="filter-tag">4 star <button onclick="this.parentElement.remove()">×</button></div>
+      <div class="filter-tag">3 star <button onclick="this.parentElement.remove()">×</button></div>
+      <span class="clear-all" onclick="document.querySelectorAll('.filter-tag').forEach(t=>t.remove())">Clear all filter</span>
+    </div>
+
+    
+    <div class="products-grid" id="productsGrid">
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/watch.png" alt="Smart watch"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★★★</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/tablet.png" alt="Phone"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★☆☆</span><span class="prod-rating-num">5.9</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/tablet.png" alt="Phone"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span></div><div class="prod-rating"><span class="prod-stars">★★★★★</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/laptop.png" alt="Laptop"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★★☆</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/camera.png" alt="Camera"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★★★</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/tablet.png" alt="Phone"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★★★</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/laptop.png" alt="Laptop"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★★★</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/watch.png" alt="Watch"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★★★</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+      <div class="prod-card"><div class="prod-card-img"><img src="assets/images/tablet.png" alt="Phone"/><button class="wish-btn" onclick="toggleWish(this)">♡</button></div><div class="prod-card-body"><div class="prod-price-row"><span class="prod-price">$99.50</span><span class="prod-old-price">$128.00</span></div><div class="prod-rating"><span class="prod-stars">★★★★★</span><span class="prod-rating-num">7.5</span></div><div class="prod-name">GoPro HERO6 4K Action Camera - Black</div></div></div>
+    </div>
+
+  
+    <div class="pagination">
+      <div class="pag-info">Show <select><option>10</option><option>20</option><option>50</option></select></div>
+      <button class="pag-btn disabled">‹</button>
+      <button class="pag-btn active">1</button>
+      <button class="pag-btn">2</button>
+      <button class="pag-btn">3</button>
+      <button class="pag-btn">›</button>
+    </div>
+  </div>
+</div>
+
+
+<section class="newsletter">
+  <h3>Subscribe on our newsletter</h3>
+  <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+  <div class="nl-form">
+    <div class="nl-input-wrap"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><input type="email" placeholder="Email"/></div>
+    <button class="nl-btn">Subscribe</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-grid">
+      <div class="fcol"><div class="fbrand-logo"><div class="logo-box"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div><span class="logo-name">Brand</span></div><p class="fbrand-desc">Best information about the company gies here but now lorem ipsum is</p><div class="socials"><button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></button><button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></button><button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></button><button class="soc-btn insta"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></button><button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#F5F5F5"/></svg></button></div></div>
+      <div class="fcol"><h5>About</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+      <div class="fcol"><h5>Partnership</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+      <div class="fcol"><h5>Information</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+      <div class="fcol"><h5>For users</h5><ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul></div>
+      <div class="fcol"><h5>Get app</h5><div class="app-btns"><img src="assets/images/appstore.png" alt="App Store"/><img src="assets/images/googleplay.png" alt="Google Play"/></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="footer-bottom-inner"><p class="fcopy">&copy; 2023 Ecommerce.</p><div class="flang"><img src="assets/flags/GB@2x.png" alt="English"/>English<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div></div></div>
+</footer>
+
+<script>
+
+function toggleWish(btn){btn.classList.toggle('active');btn.textContent=btn.classList.contains('active')?'♥':'♡';}
+
+document.getElementById('gridBtn').addEventListener('click',function(){
+  document.getElementById('productsGrid').style.gridTemplateColumns='repeat(3,1fr)';
+  document.querySelectorAll('.prod-card').forEach(c=>{c.style.flexDirection='';c.style.display='';});
+  document.querySelectorAll('.prod-card-img').forEach(i=>{i.style.width='';i.style.height='220px';});
+  this.classList.add('active');document.getElementById('listBtn').classList.remove('active');
+});
+document.getElementById('listBtn').addEventListener('click',function(){
+  document.getElementById('productsGrid').style.gridTemplateColumns='1fr';
+  document.querySelectorAll('.prod-card').forEach(c=>{c.style.display='flex';c.style.flexDirection='row';});
+  document.querySelectorAll('.prod-card-img').forEach(i=>{i.style.width='180px';i.style.height='140px';i.style.flexShrink='0';});
+  this.classList.add('active');document.getElementById('gridBtn').classList.remove('active');
+});
+document.querySelectorAll('.pag-btn:not(.disabled)').forEach(b=>{
+  b.addEventListener('click',function(){if(this.textContent.match(/^\d+$/)){document.querySelectorAll('.pag-btn').forEach(x=>x.classList.remove('active'));this.classList.add('active');}});
+});
+</script>
+</body>
+</html>
