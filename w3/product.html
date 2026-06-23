@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Brand — Mens Long Sleeve T-shirt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast"><span class="toast-icon" id="toastIcon">✓</span><span id="toastMsg">Done!</span></div>
+
+<!-- ════════════════════════════════════
+     HEADER
+════════════════════════════════════ -->
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-box"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
+      <span class="logo-name">Brand</span>
+    </a>
+    <div class="search-bar">
+      <input class="search-input" type="text" id="searchInput" placeholder="Search" autocomplete="off"/>
+      <div class="search-sep"></div>
+      <div class="search-cat">
+        <select id="searchCat">
+          <option>All category</option>
+          <option selected>Clothes and wear</option>
+          <option>Computer and tech</option>
+          <option>Home interiors</option>
+        </select>
+        <span class="arr">&#9662;</span>
+      </div>
+      <button class="search-btn" onclick="window.location.href='products.html'">Search</button>
+    </div>
+    <div class="header-icons">
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></a>
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span>Message</span></a>
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg><span>Orders</span></a>
+      <a href="#" class="hicon"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span>My cart</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════
+     NAVBAR
+════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="nav-left">
+      <button class="nav-allcat"><svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>All category</button>
+      <div class="nav-links">
+        <a href="index.html">Hot offers</a>
+        <a href="#">Gift boxes</a>
+        <a href="#">Projects</a>
+        <a href="#" class="active">Menu item</a>
+        <a href="#">Help <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <button class="nav-rbtn">English, USD <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <button class="nav-rbtn">Ship to <img class="nav-flag" src="assets/flags/DE@2x.png" alt="DE"/> <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span class="sep">›</span>
+  <a href="products.html">Clothings</a><span class="sep">›</span>
+  <a href="products.html">Men's wear</a><span class="sep">›</span>
+  <span class="cur">Summer clothing</span>
+</div>
+
+<!-- ════════════════════════════════════
+     PRODUCT DETAIL — 3 COLUMNS
+     (matches web-detail.jpg exactly)
+════════════════════════════════════ -->
+<div class="detail-wrapper">
+
+  <!-- ── COL 1: IMAGE GALLERY ── -->
+  <div class="gallery">
+    <!-- Thumbnails -->
+    <div class="gallery-thumbs">
+      <div class="thumb active" onclick="switchImg(this,'assets/images/shirt1.png')"><img src="assets/images/shirt1.png" alt="View 1"/></div>
+      <div class="thumb" onclick="switchImg(this,'assets/images/shirt2.png')"><img src="assets/images/shirt2.png" alt="View 2"/></div>
+      <div class="thumb" onclick="switchImg(this,'assets/images/shirt3.png')"><img src="assets/images/shirt3.png" alt="View 3"/></div>
+      <div class="thumb" onclick="switchImg(this,'assets/images/shirt4.png')"><img src="assets/images/shirt4.png" alt="View 4"/></div>
+      <div class="thumb" onclick="switchImg(this,'assets/images/shirt5.png')"><img src="assets/images/shirt5.png" alt="View 5"/></div>
+      <div class="thumb" onclick="switchImg(this,'assets/images/tshirt.png')"><img src="assets/images/tshirt.png" alt="View 6"/></div>
+    </div>
+    <!-- Main Image -->
+    <div class="gallery-main">
+      <div class="in-stock-badge">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        In stock
+      </div>
+      <img src="assets/images/shirt1.png" alt="Product Main" id="mainImg"/>
+    </div>
+  </div>
+
+  <!-- ── COL 2: PRODUCT INFO ── -->
+  <div class="product-info">
+    <h1 class="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+
+    <!-- Rating + Reviews + Sold -->
+    <div class="product-meta">
+      <span class="prod-stars">★★★★★</span>
+      <span class="prod-rating-val">9.3</span>
+      <span class="prod-reviews">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        32 reviews
+      </span>
+      <span class="prod-sold">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        154 sold
+      </span>
+    </div>
+
+    <!-- Price Tiers (50-100 pcs | 100-700 pcs | 700+ pcs) -->
+    <div class="price-tiers">
+      <div class="tier">
+        <div class="tier-price">$98.00</div>
+        <div class="tier-qty">50-100 pcs</div>
+      </div>
+      <div class="tier">
+        <div class="tier-price">$90.00</div>
+        <div class="tier-qty">100-700 pcs</div>
+      </div>
+      <div class="tier">
+        <div class="tier-price">$78.00</div>
+        <div class="tier-qty">700+ pcs</div>
+      </div>
+    </div>
+
+    <!-- Specs -->
+    <table class="spec-table">
+      <tr><td>Price:</td><td>Negotiable</td></tr>
+      <tr><td>Type:</td><td>Classic shoes</td></tr>
+      <tr><td>Material:</td><td>Plastic material</td></tr>
+      <tr><td>Design:</td><td>Modern nice</td></tr>
+      <tr>
+        <td>Customization:</td>
+        <td>
+          <!-- Dropdown selector for customization — JavaScript interactive -->
+          <select class="size-dropdown" id="customizationSelect" onchange="handleCustomization(this)">
+            <option value="">Customized logo and design custom packages</option>
+            <option value="logo">Logo only</option>
+            <option value="design">Custom design</option>
+            <option value="both">Logo + Design</option>
+            <option value="none">No customization</option>
+          </select>
+        </td>
+      </tr>
+      <tr><td>Protection:</td><td>Refund Policy</td></tr>
+      <tr><td>Warranty:</td><td>2 years full warranty</td></tr>
+    </table>
+
+    <!-- Size Dropdown (JavaScript dropdown selector) -->
+    <div class="size-section">
+      <label>Select Size:</label>
+      <select class="size-dropdown" id="sizeSelect" onchange="handleSize(this)">
+        <option value="">-- Choose a size --</option>
+        <option value="XS">XS — Extra Small</option>
+        <option value="S">S — Small</option>
+        <option value="M" selected>M — Medium</option>
+        <option value="L">L — Large</option>
+        <option value="XL">XL — Extra Large</option>
+        <option value="XXL">XXL — Double Extra Large</option>
+      </select>
+    </div>
+
+    <!-- Feature list -->
+    <div class="feature-list">
+      <div class="feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Some great feature name here</div>
+      <div class="feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lorem ipsum dolor sit amet, consectetur</div>
+      <div class="feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Duis aute irure dolor in reprehenderit</div>
+      <div class="feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Some great feature name here</div>
+    </div>
+  </div>
+
+  <!-- ── COL 3: SUPPLIER CARD ── -->
+  <div class="supplier-card">
+    <div class="supplier-header">
+      <div class="supplier-avatar">R</div>
+      <div>
+        <div class="supplier-name">Supplier</div>
+        <div style="font-size:12px;color:#8B96A5;">Guanjoi Trading LLC</div>
+      </div>
+    </div>
+    <div class="supplier-body">
+      <div class="supplier-meta">
+        <div class="supplier-meta-item">
+          <img src="assets/flags/DE@2x.png" style="width:20px;height:14px;border-radius:2px;" alt="DE"/>
+          Germany, Berlin
+        </div>
+        <div class="supplier-meta-item">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span class="verified">Verified Seller</span>
+        </div>
+        <div class="supplier-meta-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          <span class="shipping">Worldwide shipping</span>
+        </div>
+      </div>
+      <button class="send-inquiry-btn" onclick="showToast('Inquiry sent!','✓')">Send inquiry</button>
+      <button class="seller-profile-btn" onclick="showToast('Opening seller profile...','👤')">Seller's profile</button>
+      <div class="save-later" onclick="toggleSave(this)">
+        <svg viewBox="0 0 24 24" id="saveIcon"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <span id="saveText">Save for later</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /detail-wrapper -->
+
+
+<!-- ════════════════════════════════════
+     TABS SECTION
+     Description | Reviews | Shipping | About seller
+════════════════════════════════════ -->
+<div class="tabs-section">
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="openTab(event,'tab-desc')">Description</button>
+    <button class="tab-btn" onclick="openTab(event,'tab-reviews')">Reviews</button>
+    <button class="tab-btn" onclick="openTab(event,'tab-shipping')">Shipping</button>
+    <button class="tab-btn" onclick="openTab(event,'tab-seller')">About seller</button>
+  </div>
+
+  <!-- ── Description Tab ── -->
+  <div id="tab-desc" class="tab-panel active">
+    <p class="desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <p class="desc-text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <table class="desc-spec-table">
+      <tr><td>Model</td><td>#8786867</td></tr>
+      <tr><td>Style</td><td>Classic style</td></tr>
+      <tr><td>Certificate</td><td>ISO-898921212</td></tr>
+      <tr><td>Size</td><td>34mm x 450mm x 19mm</td></tr>
+      <tr><td>Memory</td><td>36GB RAM</td></tr>
+    </table>
+    <div class="desc-feature-list">
+      <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Some great feature name here</div>
+      <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lorem ipsum dolor sit amet, consectetur</div>
+      <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Duis aute irure dolor in reprehenderit</div>
+      <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Some great feature name here</div>
+    </div>
+  </div>
+
+  <!-- ── Reviews Tab ── -->
+  <div id="tab-reviews" class="tab-panel">
+    <div class="reviews-layout">
+      <!-- Summary -->
+      <div class="reviews-summary">
+        <div class="reviews-score">9.3</div>
+        <div class="reviews-stars">★★★★★</div>
+        <div class="reviews-total">32 reviews</div>
+        <div style="margin-top:20px;">
+          <div class="rating-bars">
+            <div class="rating-bar-row"><span style="width:32px;text-align:right;">5 ★</span><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div><span>25</span></div>
+            <div class="rating-bar-row"><span style="width:32px;text-align:right;">4 ★</span><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div><span>5</span></div>
+            <div class="rating-bar-row"><span style="width:32px;text-align:right;">3 ★</span><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div><span>2</span></div>
+            <div class="rating-bar-row"><span style="width:32px;text-align:right;">2 ★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
+            <div class="rating-bar-row"><span style="width:32px;text-align:right;">1 ★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- Review Cards -->
+      <div>
+        <div class="review-list">
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar" style="background:#2563EB;">A</div>
+                <div><div class="reviewer-name">Ahmed K.</div><div class="reviewer-date">15 Jan 2024</div></div>
+              </div>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-text">Excellent quality T-shirt! The fabric is very soft and comfortable. Size fits perfectly. Very happy with this purchase. Will definitely order more.</p>
+            <div class="review-helpful">Was this helpful? <button class="helpful-btn" onclick="markHelpful(this)">👍 Yes (12)</button> <button class="helpful-btn">👎 No (1)</button></div>
+          </div>
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar" style="background:#FF7B24;">S</div>
+                <div><div class="reviewer-name">Sara M.</div><div class="reviewer-date">10 Jan 2024</div></div>
+              </div>
+              <span class="review-stars">★★★★★</span>
+            </div>
+            <p class="review-text">Great product! Fast shipping and well packaged. The shirt looks exactly like in the photos. Good stitching and the colors are vibrant.</p>
+            <div class="review-helpful">Was this helpful? <button class="helpful-btn" onclick="markHelpful(this)">👍 Yes (8)</button> <button class="helpful-btn">👎 No (0)</button></div>
+          </div>
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="reviewer-info">
+                <div class="reviewer-avatar" style="background:#00B517;">U</div>
+                <div><div class="reviewer-name">Usman R.</div><div class="reviewer-date">5 Jan 2024</div></div>
+              </div>
+              <span class="review-stars">★★★★☆</span>
+            </div>
+            <p class="review-text">Good quality overall. The material is comfortable for daily wear. Only reason for 4 stars is delivery took a bit longer than expected, but the product itself is great.</p>
+            <div class="review-helpful">Was this helpful? <button class="helpful-btn" onclick="markHelpful(this)">👍 Yes (5)</button> <button class="helpful-btn">👎 No (2)</button></div>
+          </div>
+        </div>
+
+        <!-- Write a Review Form -->
+        <div class="write-review">
+          <h4>Write a Review</h4>
+          <!-- Interactive star rating input -->
+          <div class="star-input" id="starInput">
+            <span onclick="setRating(1)">★</span>
+            <span onclick="setRating(2)">★</span>
+            <span onclick="setRating(3)">★</span>
+            <span onclick="setRating(4)">★</span>
+            <span onclick="setRating(5)">★</span>
+          </div>
+          <div class="review-form">
+            <div class="review-form-row">
+              <input type="text" placeholder="Your name" id="reviewName"/>
+              <input type="email" placeholder="Email address" id="reviewEmail"/>
+            </div>
+            <input type="text" placeholder="Review title" id="reviewTitle"/>
+            <textarea placeholder="Share your experience with this product..." id="reviewText"></textarea>
+            <button class="submit-review-btn" onclick="submitReview()">Submit Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Shipping Tab ── -->
+  <div id="tab-shipping" class="tab-panel">
+    <div class="shipping-grid">
+      <div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:14px;color:#1C1C1C;">Shipping options</h4>
+        <table class="shipping-table">
+          <tr><td>Standard shipping</td><td>Free (7–15 business days)</td></tr>
+          <tr><td>Express shipping</td><td>$12.99 (3–5 business days)</td></tr>
+          <tr><td>Overnight shipping</td><td>$24.99 (1–2 business days)</td></tr>
+          <tr><td>International</td><td>From $14.99 (10–21 days)</td></tr>
+        </table>
+      </div>
+      <div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:14px;color:#1C1C1C;">Returns policy</h4>
+        <div class="desc-feature-list">
+          <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>30-day hassle-free return policy</div>
+          <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Original packaging required</div>
+          <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Full refund within 5–7 business days</div>
+          <div class="desc-feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free return shipping label provided</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── About Seller Tab ── -->
+  <div id="tab-seller" class="tab-panel">
+    <div class="about-seller">
+      <div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:14px;color:#1C1C1C;">Seller information</h4>
+        <div class="seller-detail-row"><span class="sdlabel">Company:</span><span class="sdval">Guanjoi Trading LLC</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Location:</span><span class="sdval">Germany, Berlin</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Member since:</span><span class="sdval">January 2020</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Total sales:</span><span class="sdval">12,400+</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Response rate:</span><span class="sdval">98%</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Response time:</span><span class="sdval">Within 2 hours</span></div>
+      </div>
+      <div>
+        <h4 style="font-size:15px;font-weight:600;margin-bottom:14px;color:#1C1C1C;">Seller stats</h4>
+        <div class="seller-detail-row"><span class="sdlabel">Verified seller:</span><span class="sdval" style="color:#2563EB;">✓ Yes</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Worldwide ship:</span><span class="sdval" style="color:#00B517;">✓ Available</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Positive feedback:</span><span class="sdval">96.8%</span></div>
+        <div class="seller-detail-row"><span class="sdlabel">Products:</span><span class="sdval">340+ listings</span></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /tabs-section -->
+
+
+<!-- ════════════════════════════════════
+     RELATED PRODUCTS (matches web-detail.jpg bottom)
+════════════════════════════════════ -->
+<div class="related-section">
+  <h2 class="section-title">Related products</h2>
+  <div class="related-grid">
+    <div class="rel-card" onclick="window.location.reload()"><img src="assets/images/bag.png" alt="Bag"/><div class="rel-card-name">Xiaomi Redmi 8 Original</div><div class="rel-card-price">$32.00-$40.00</div></div>
+    <div class="rel-card" onclick="window.location.reload()"><img src="assets/images/watch.png" alt="Watch"/><div class="rel-card-name">Xiaomi Redmi 8 Original</div><div class="rel-card-price">$32.00-$40.00</div></div>
+    <div class="rel-card" onclick="window.location.reload()"><img src="assets/images/headphones.png" alt="Head"/><div class="rel-card-name">Xiaomi Redmi 8 Original</div><div class="rel-card-price">$32.00-$40.00</div></div>
+    <div class="rel-card" onclick="window.location.reload()"><img src="assets/images/jeans.png" alt="Jeans"/><div class="rel-card-name">Xiaomi Redmi 8 Original</div><div class="rel-card-price">$32.00-$40.00</div></div>
+    <div class="rel-card" onclick="window.location.reload()"><img src="assets/images/speaker.png" alt="Kettle"/><div class="rel-card-name">Xiaomi Redmi 8 Original</div><div class="rel-card-price">$32.00-$40.00</div></div>
+    <div class="rel-card" onclick="window.location.reload()"><img src="assets/images/wallet.png" alt="Rack"/><div class="rel-card-name">Xiaomi Redmi 8 Original</div><div class="rel-card-price">$32.00-$40.00</div></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     DISCOUNT BANNER
+════════════════════════════════════ -->
+<div class="discount-banner">
+  <div class="discount-banner-inner">
+    <div class="discount-text">
+      <h3>Super discount on more than 100 USD</h3>
+      <p>Have you ever finally just write dummy info</p>
+    </div>
+    <button class="shop-now-btn" onclick="window.location.href='products.html'">Shop now</button>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <h3>Subscribe on our newsletter</h3>
+  <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+  <div class="nl-form">
+    <div class="nl-input-wrap"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><input type="email" id="nlEmail" placeholder="Email"/></div>
+    <button class="nl-btn" onclick="subscribeNl()">Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-grid">
+      <div class="fcol">
+        <div class="fbrand-logo"><div class="logo-box"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></div><span class="logo-name">Brand</span></div>
+        <p class="fbrand-desc">Best information about the company gies here but now lorem ipsum is</p>
+        <div class="socials">
+          <button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></button>
+          <button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></button>
+          <button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></button>
+          <button class="soc-btn insta"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></button>
+          <button class="soc-btn"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#F5F5F5"/></svg></button>
+        </div>
+      </div>
+      <div class="fcol"><h5>About</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+      <div class="fcol"><h5>Partnership</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Find store</a></li><li><a href="#">Categories</a></li><li><a href="#">Blogs</a></li></ul></div>
+      <div class="fcol"><h5>Information</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Money Refund</a></li><li><a href="#">Shipping</a></li><li><a href="#">Contact us</a></li></ul></div>
+      <div class="fcol"><h5>For users</h5><ul><li><a href="#">Login</a></li><li><a href="#">Register</a></li><li><a href="#">Settings</a></li><li><a href="#">My Orders</a></li></ul></div>
+      <div class="fcol"><h5>Get app</h5><div class="app-btns"><img src="assets/images/appstore.png" alt="App Store"/><img src="assets/images/googleplay.png" alt="Google Play"/></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="footer-bottom-inner"><p class="fcopy">&copy; 2023 Ecommerce.</p><div class="flang"><img src="assets/flags/GB@2x.png" alt="English"/>English<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div></div></div>
+</footer>
+
+<!-- ════════════════════════════════════
+     JAVASCRIPT — Week 3 Full Interactivity
+════════════════════════════════════ -->
+<script src="js/product.js"></script>
+</body>
+</html>
