@@ -11,12 +11,8 @@
 </head>
 <body>
 
-<!-- Toast Notification -->
 <div class="toast" id="toast"><span class="toast-icon" id="toastIcon">✓</span><span id="toastMsg">Done!</span></div>
 
-<!-- ════════════════════════════════════
-     HEADER
-════════════════════════════════════ -->
 <header class="header">
   <div class="header-inner">
     <a class="logo" href="index.html">
@@ -46,9 +42,6 @@
   </div>
 </header>
 
-<!-- ════════════════════════════════════
-     NAVBAR
-════════════════════════════════════ -->
 <nav class="navbar">
   <div class="navbar-inner">
     <div class="nav-left">
@@ -68,7 +61,6 @@
   </div>
 </nav>
 
-<!-- BREADCRUMB -->
 <div class="breadcrumb">
   <a href="index.html">Home</a><span class="sep">›</span>
   <a href="products.html">Clothings</a><span class="sep">›</span>
@@ -76,15 +68,9 @@
   <span class="cur">Summer clothing</span>
 </div>
 
-<!-- ════════════════════════════════════
-     PRODUCT DETAIL — 3 COLUMNS
-     (matches web-detail.jpg exactly)
-════════════════════════════════════ -->
 <div class="detail-wrapper">
 
-  <!-- ── COL 1: IMAGE GALLERY ── -->
   <div class="gallery">
-    <!-- Thumbnails -->
     <div class="gallery-thumbs">
       <div class="thumb active" onclick="switchImg(this,'assets/images/shirt1.png')"><img src="assets/images/shirt1.png" alt="View 1"/></div>
       <div class="thumb" onclick="switchImg(this,'assets/images/shirt2.png')"><img src="assets/images/shirt2.png" alt="View 2"/></div>
@@ -93,7 +79,6 @@
       <div class="thumb" onclick="switchImg(this,'assets/images/shirt5.png')"><img src="assets/images/shirt5.png" alt="View 5"/></div>
       <div class="thumb" onclick="switchImg(this,'assets/images/tshirt.png')"><img src="assets/images/tshirt.png" alt="View 6"/></div>
     </div>
-    <!-- Main Image -->
     <div class="gallery-main">
       <div class="in-stock-badge">
         <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
@@ -103,11 +88,9 @@
     </div>
   </div>
 
-  <!-- ── COL 2: PRODUCT INFO ── -->
   <div class="product-info">
     <h1 class="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
 
-    <!-- Rating + Reviews + Sold -->
     <div class="product-meta">
       <span class="prod-stars">★★★★★</span>
       <span class="prod-rating-val">9.3</span>
@@ -121,7 +104,6 @@
       </span>
     </div>
 
-    <!-- Price Tiers (50-100 pcs | 100-700 pcs | 700+ pcs) -->
     <div class="price-tiers">
       <div class="tier">
         <div class="tier-price">$98.00</div>
@@ -137,7 +119,6 @@
       </div>
     </div>
 
-    <!-- Specs -->
     <table class="spec-table">
       <tr><td>Price:</td><td>Negotiable</td></tr>
       <tr><td>Type:</td><td>Classic shoes</td></tr>
@@ -146,7 +127,6 @@
       <tr>
         <td>Customization:</td>
         <td>
-          <!-- Dropdown selector for customization — JavaScript interactive -->
           <select class="size-dropdown" id="customizationSelect" onchange="handleCustomization(this)">
             <option value="">Customized logo and design custom packages</option>
             <option value="logo">Logo only</option>
@@ -160,7 +140,6 @@
       <tr><td>Warranty:</td><td>2 years full warranty</td></tr>
     </table>
 
-    <!-- Size Dropdown (JavaScript dropdown selector) -->
     <div class="size-section">
       <label>Select Size:</label>
       <select class="size-dropdown" id="sizeSelect" onchange="handleSize(this)">
@@ -174,7 +153,7 @@
       </select>
     </div>
 
-    <!-- Feature list -->
+
     <div class="feature-list">
       <div class="feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Some great feature name here</div>
       <div class="feature-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lorem ipsum dolor sit amet, consectetur</div>
@@ -183,7 +162,7 @@
     </div>
   </div>
 
-  <!-- ── COL 3: SUPPLIER CARD ── -->
+  
   <div class="supplier-card">
     <div class="supplier-header">
       <div class="supplier-avatar">R</div>
@@ -216,13 +195,8 @@
     </div>
   </div>
 
-</div><!-- /detail-wrapper -->
+</div>
 
-
-<!-- ════════════════════════════════════
-     TABS SECTION
-     Description | Reviews | Shipping | About seller
-════════════════════════════════════ -->
 <div class="tabs-section">
   <div class="tab-nav">
     <button class="tab-btn active" onclick="openTab(event,'tab-desc')">Description</button>
@@ -231,7 +205,6 @@
     <button class="tab-btn" onclick="openTab(event,'tab-seller')">About seller</button>
   </div>
 
-  <!-- ── Description Tab ── -->
   <div id="tab-desc" class="tab-panel active">
     <p class="desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     <p class="desc-text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -250,7 +223,6 @@
     </div>
   </div>
 
-  <!-- ── Reviews Tab ── -->
   <div id="tab-reviews" class="tab-panel">
     <div class="reviews-layout">
       <!-- Summary -->
@@ -268,7 +240,7 @@
           </div>
         </div>
       </div>
-      <!-- Review Cards -->
+    
       <div>
         <div class="review-list">
           <div class="review-card">
@@ -306,7 +278,6 @@
           </div>
         </div>
 
-        <!-- Write a Review Form -->
         <div class="write-review">
           <h4>Write a Review</h4>
           <!-- Interactive star rating input -->
@@ -331,7 +302,6 @@
     </div>
   </div>
 
-  <!-- ── Shipping Tab ── -->
   <div id="tab-shipping" class="tab-panel">
     <div class="shipping-grid">
       <div>
@@ -355,7 +325,6 @@
     </div>
   </div>
 
-  <!-- ── About Seller Tab ── -->
   <div id="tab-seller" class="tab-panel">
     <div class="about-seller">
       <div>
@@ -377,12 +346,8 @@
     </div>
   </div>
 
-</div><!-- /tabs-section -->
+</div>
 
-
-<!-- ════════════════════════════════════
-     RELATED PRODUCTS (matches web-detail.jpg bottom)
-════════════════════════════════════ -->
 <div class="related-section">
   <h2 class="section-title">Related products</h2>
   <div class="related-grid">
@@ -395,9 +360,6 @@
   </div>
 </div>
 
-<!-- ════════════════════════════════════
-     DISCOUNT BANNER
-════════════════════════════════════ -->
 <div class="discount-banner">
   <div class="discount-banner-inner">
     <div class="discount-text">
@@ -408,7 +370,6 @@
   </div>
 </div>
 
-<!-- NEWSLETTER -->
 <section class="newsletter">
   <h3>Subscribe on our newsletter</h3>
   <p>Get daily news on upcoming offers from many suppliers all over the world</p>
@@ -418,7 +379,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-main">
     <div class="footer-grid">
@@ -443,9 +403,6 @@
   <div class="footer-bottom"><div class="footer-bottom-inner"><p class="fcopy">&copy; 2023 Ecommerce.</p><div class="flang"><img src="assets/flags/GB@2x.png" alt="English"/>English<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div></div></div>
 </footer>
 
-<!-- ════════════════════════════════════
-     JAVASCRIPT — Week 3 Full Interactivity
-════════════════════════════════════ -->
 <script src="js/product.js"></script>
 </body>
 </html>

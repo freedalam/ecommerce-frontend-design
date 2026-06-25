@@ -1,10 +1,3 @@
-/* ============================================================
-   WEEK 3 — Product Details Page + Interactivity
-   Exact Figma: Ecommerce Web Design - Alibaba Style
-   Reference: web-detail.jpg screenshot
-   Colors: Blue #2563EB | Text #1C1C1C | Grey #8B96A5
-   Border: #E0E0E0 | BG: #F5F5F5 | Font: Inter
-============================================================ */
 
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -12,7 +5,6 @@ body{font-family:'Inter',sans-serif;font-size:14px;color:#1C1C1C;background:#F5F
 a{text-decoration:none;color:inherit;}ul{list-style:none;}img{display:block;max-width:100%;}
 button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none;}
 
-/* ── HEADER ── */
 .header{background:#fff;border-bottom:1px solid #E0E0E0;position:sticky;top:0;z-index:999;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
 .header-inner{max-width:1200px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;gap:20px;}
 .logo{display:flex;align-items:center;gap:8px;flex-shrink:0;}
@@ -36,7 +28,6 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .hicon span{font-size:11px;color:#606060;white-space:nowrap;}
 .hicon:hover span{color:#2563EB;}
 
-/* ── NAVBAR ── */
 .navbar{background:#fff;border-bottom:1px solid #E0E0E0;}
 .navbar-inner{max-width:1200px;margin:0 auto;padding:0 20px;height:44px;display:flex;align-items:center;justify-content:space-between;}
 .nav-left{display:flex;align-items:center;}
@@ -52,17 +43,17 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .nav-rbtn svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;}
 .nav-flag{width:22px;height:15px;object-fit:cover;border-radius:2px;}
 
-/* ── BREADCRUMB ── */
+
 .breadcrumb{max-width:1200px;margin:14px auto 0;padding:0 20px;display:flex;align-items:center;gap:6px;font-size:13px;color:#8B96A5;}
 .breadcrumb a{color:#8B96A5;transition:color .15s;}
 .breadcrumb a:hover{color:#2563EB;}
 .breadcrumb .sep{color:#C0C0C0;}
 .breadcrumb .cur{color:#1C1C1C;}
 
-/* ── PRODUCT DETAIL LAYOUT ── */
+
 .detail-wrapper{max-width:1200px;margin:16px auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr 260px;gap:20px;align-items:start;}
 
-/* ── LEFT: IMAGE GALLERY (matches web-detail.jpg left) ── */
+
 .gallery{display:flex;gap:12px;}
 .gallery-thumbs{display:flex;flex-direction:column;gap:8px;}
 .thumb{width:60px;height:60px;border:1.5px solid #E0E0E0;border-radius:6px;overflow:hidden;cursor:pointer;transition:border-color .2s;background:#F9F9F9;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
@@ -74,7 +65,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .in-stock-badge{position:absolute;top:12px;left:12px;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:#00B517;}
 .in-stock-badge svg{width:14px;height:14px;stroke:#00B517;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
 
-/* ── CENTER: PRODUCT INFO ── */
+
 .product-info{}
 .product-title{font-size:20px;font-weight:700;color:#1C1C1C;line-height:1.35;margin-bottom:10px;}
 .product-meta{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
@@ -85,14 +76,14 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .prod-sold{font-size:13px;color:#8B96A5;display:flex;align-items:center;gap:4px;}
 .prod-sold svg{width:14px;height:14px;stroke:#8B96A5;fill:none;stroke-width:1.7;stroke-linecap:round;}
 
-/* Price tiers table (matches Figma: 3 price columns) */
+
 .price-tiers{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #E0E0E0;border-radius:8px;overflow:hidden;margin-bottom:16px;}
 .tier{padding:12px 16px;border-right:1px solid #E0E0E0;background:#FFF8F0;}
 .tier:last-child{border-right:none;}
 .tier .tier-price{font-size:20px;font-weight:700;color:#FA3434;margin-bottom:2px;}
 .tier .tier-qty{font-size:12px;color:#8B96A5;}
 
-/* Product specs table */
+
 .spec-table{width:100%;border-collapse:collapse;margin-bottom:16px;}
 .spec-table tr{border-bottom:1px solid #F0F0F0;}
 .spec-table tr:last-child{border-bottom:none;}
@@ -100,12 +91,12 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .spec-table td:first-child{color:#8B96A5;width:110px;flex-shrink:0;}
 .spec-table td:last-child{color:#505050;font-weight:500;}
 
-/* Feature list */
+
 .feature-list{margin-bottom:16px;}
 .feature-item{display:flex;align-items:center;gap:8px;font-size:13px;color:#505050;margin-bottom:6px;}
 .feature-item svg{width:14px;height:14px;stroke:#2563EB;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
-/* ── RIGHT: SUPPLIER CARD (matches web-detail.jpg right panel) ── */
+
 .supplier-card{background:#fff;border:1px solid #E0E0E0;border-radius:8px;overflow:hidden;}
 .supplier-header{padding:14px 16px;border-bottom:1px solid #E0E0E0;display:flex;align-items:center;gap:10px;}
 .supplier-avatar{width:36px;height:36px;border-radius:50%;background:#2563EB;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#fff;flex-shrink:0;}
@@ -124,7 +115,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .save-later:hover{color:#2563EB;}
 .save-later svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
 
-/* ── TABS SECTION ── */
+
 .tabs-section{max-width:1200px;margin:20px auto;padding:0 20px;background:#fff;border:1px solid #E0E0E0;border-radius:8px;overflow:hidden;}
 .tab-nav{display:flex;border-bottom:1px solid #E0E0E0;}
 .tab-btn{padding:14px 24px;font-size:14px;font-weight:500;color:#8B96A5;cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .15s,border-color .15s;font-family:'Inter',sans-serif;}
@@ -133,7 +124,6 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .tab-panel{display:none;padding:24px;}
 .tab-panel.active{display:block;}
 
-/* Description tab */
 .desc-text{font-size:14px;color:#505050;line-height:1.8;margin-bottom:16px;}
 .desc-spec-table{width:100%;border-collapse:collapse;margin-bottom:16px;}
 .desc-spec-table tr{border-bottom:1px solid #F0F0F0;}
@@ -143,7 +133,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .desc-feature-item{display:flex;align-items:center;gap:8px;font-size:13px;color:#505050;}
 .desc-feature-item svg{width:14px;height:14px;stroke:#2563EB;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
-/* Reviews tab */
+
 .reviews-layout{display:grid;grid-template-columns:1fr 2fr;gap:32px;}
 .reviews-summary{text-align:center;padding:20px;}
 .reviews-score{font-size:64px;font-weight:800;color:#1C1C1C;line-height:1;}
@@ -166,7 +156,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .helpful-btn{border:1px solid #E0E0E0;border-radius:4px;padding:3px 10px;font-size:12px;font-family:'Inter',sans-serif;cursor:pointer;color:#505050;background:#fff;transition:all .15s;}
 .helpful-btn:hover{border-color:#2563EB;color:#2563EB;}
 
-/* Write review */
+
 .write-review{margin-top:24px;background:#F9F9F9;border:1px solid #E0E0E0;border-radius:8px;padding:20px;}
 .write-review h4{font-size:15px;font-weight:600;color:#1C1C1C;margin-bottom:14px;}
 .star-input{display:flex;gap:4px;margin-bottom:14px;}
@@ -180,20 +170,19 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .submit-review-btn{background:#2563EB;color:#fff;border:none;border-radius:6px;padding:10px 24px;font-size:14px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:background .2s;align-self:flex-start;}
 .submit-review-btn:hover{background:#1D4ED8;}
 
-/* Shipping tab */
+
 .shipping-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
 .shipping-table{width:100%;border-collapse:collapse;}
 .shipping-table tr{border-bottom:1px solid #F0F0F0;}
 .shipping-table td{padding:10px 0;font-size:13px;color:#505050;}
 .shipping-table td:first-child{font-weight:500;color:#1C1C1C;width:40%;}
 
-/* About Seller tab */
+
 .about-seller{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
 .seller-detail-row{display:flex;gap:12px;margin-bottom:10px;font-size:13px;}
 .seller-detail-row .sdlabel{color:#8B96A5;width:120px;flex-shrink:0;}
 .seller-detail-row .sdval{color:#1C1C1C;font-weight:500;}
 
-/* ── RELATED PRODUCTS ── */
 .related-section{max-width:1200px;margin:20px auto;padding:0 20px;}
 .section-title{font-size:18px;font-weight:700;color:#1C1C1C;margin-bottom:16px;}
 .related-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
@@ -203,7 +192,6 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .rel-card-name{font-size:12px;color:#505050;margin-bottom:4px;line-height:1.4;}
 .rel-card-price{font-size:13px;color:#8B96A5;}
 
-/* ── DISCOUNT BANNER ── */
 .discount-banner{max-width:1200px;margin:16px auto;padding:0 20px;}
 .discount-banner-inner{background:linear-gradient(135deg,#2563EB 0%,#1e40af 100%);border-radius:8px;padding:24px 32px;display:flex;align-items:center;justify-content:space-between;}
 .discount-text h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:4px;}
@@ -211,18 +199,16 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .shop-now-btn{background:#FF7B24;color:#fff;border:none;padding:11px 28px;border-radius:6px;font-size:14px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;transition:opacity .2s;white-space:nowrap;flex-shrink:0;}
 .shop-now-btn:hover{opacity:.88;}
 
-/* ── SIZE DROPDOWN SELECTOR ── */
 .size-section{margin-bottom:14px;}
 .size-section label{font-size:13px;color:#8B96A5;margin-bottom:6px;display:block;}
 .size-dropdown{width:100%;padding:9px 12px;border:1px solid #E0E0E0;border-radius:6px;font-size:13px;font-family:'Inter',sans-serif;color:#1C1C1C;outline:none;cursor:pointer;background:#fff;transition:border-color .2s;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238B96A5' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;}
 .size-dropdown:focus{border-color:#2563EB;}
 
-/* ── TOAST NOTIFICATION ── */
 .toast{position:fixed;bottom:24px;right:24px;background:#1C1C1C;color:#fff;padding:12px 20px;border-radius:8px;font-size:14px;font-weight:500;z-index:9999;transform:translateY(80px);opacity:0;transition:all .3s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.2);pointer-events:none;}
 .toast.show{transform:translateY(0);opacity:1;}
 .toast-icon{font-size:18px;}
 
-/* ── NEWSLETTER ── */
+
 .newsletter{background:#EFF2F4;padding:48px 20px;text-align:center;}
 .newsletter h3{font-size:22px;font-weight:700;color:#1C1C1C;margin-bottom:8px;}
 .newsletter p{font-size:14px;color:#505050;margin-bottom:24px;}
@@ -234,7 +220,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .nl-btn{background:#2563EB;color:#fff;border:none;padding:0 24px;height:44px;font-size:14px;font-weight:600;font-family:'Inter',sans-serif;border-radius:0 6px 6px 0;cursor:pointer;transition:background .2s;}
 .nl-btn:hover{background:#1D4ED8;}
 
-/* ── FOOTER ── */
+
 .footer-main{background:#fff;padding:48px 0 40px;border-top:1px solid #E0E0E0;}
 .footer-grid{max-width:1200px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:240px 1fr 1fr 1fr 1fr 1fr;gap:28px;}
 .fbrand-logo{display:flex;align-items:center;gap:8px;margin-bottom:14px;}

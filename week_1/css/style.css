@@ -1,18 +1,6 @@
 /* ============================================================
    WEEK 1 — Header & Footer
-   Exact match to Figma: Ecommerce Web Design (Alibaba style)
-   
-   Design tokens from Figma screenshots:
-   - Primary Blue : #2563EB / #1C6EE8
-   - Orange       : #FF7B24 (promo button)
-   - Teal         : #26A7A7 (secondary promo)
-   - Text Dark    : #1C1C1C
-   - Text Mid     : #505050
-   - Text Grey    : #8B96A5
-   - Border       : #E0E0E0
-   - BG Light     : #F5F5F5
-   - White        : #FFFFFF
-   - Font         : Inter (Google Fonts)
+  
 ============================================================ */
 
 /* ---------- RESET ---------- */
@@ -46,8 +34,6 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 
 /* ============================================================
    HEADER
-   Figma: white bg | logo left | search center | icons right
-   Height: ~64px
 ============================================================ */
 .header {
   background: #FFFFFF;
@@ -69,7 +55,6 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 }
 
 /* --- Logo --- */
-/* Figma: blue shopping bag icon + "Brand" in blue text */
 .header-logo {
   display: flex;
   align-items: center;
@@ -106,10 +91,7 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
   letter-spacing: -0.3px;
 }
 
-/* --- Search Bar ---
-   Figma: input | "All category" dropdown | blue Search button
-   Full width between logo and icons
-*/
+/* --- Search Bar ---*/
 .header-search {
   flex: 1;
   display: flex;
@@ -142,8 +124,6 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 .search-text-input::placeholder {
   color: #8B96A5;
 }
-
-/* Divider between input and dropdown */
 .search-divider {
   width: 1px;
   background: #E0E0E0;
@@ -199,10 +179,7 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
   background: #1D4ED8;
 }
 
-/* --- Header Right Icons ---
-   Figma: Profile | Message | Orders | My cart
-   Grey icons with labels underneath
-*/
+/* --- Header Right Icons ---*/
 .header-icons {
   display: flex;
   align-items: center;
@@ -254,8 +231,6 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 
 /* ============================================================
    NAVBAR
-   Figma: white bg | ≡ All category | links | English,USD | Ship to 🇩🇪
-   Height: ~44px
 ============================================================ */
 .navbar {
   background: #FFFFFF;
@@ -381,7 +356,7 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 }
 
 /* ============================================================
-   PAGE PLACEHOLDER (Week 1 demo content)
+   PAGE PLACEHOLDER 
 ============================================================ */
 .demo-area {
   max-width: 1200px;
@@ -427,7 +402,6 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 
 /* ============================================================
    NEWSLETTER SECTION
-   Figma: light grey bg | centered heading | email input + Subscribe btn
 ============================================================ */
 .newsletter {
   background: #EFF2F4;
@@ -511,8 +485,6 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 
 /* ============================================================
    FOOTER MAIN
-   Figma: WHITE bg | 6 columns: Brand info | About | Partnership
-          | Information | For users | Get app
 ============================================================ */
 .footer-main {
   background: #FFFFFF;
@@ -650,7 +622,6 @@ button { font-family: 'Inter', sans-serif; cursor: pointer; border: none; backgr
 
 /* ============================================================
    FOOTER BOTTOM BAR
-   Figma: light grey bg | © 2023 Ecommerce. | English flag right
 ============================================================ */
 .footer-bottom {
   background: #EFF2F4;

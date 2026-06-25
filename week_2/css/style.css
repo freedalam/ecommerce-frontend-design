@@ -1,6 +1,5 @@
 /* ============================================================
    WEEK 2 — Home Page + Product Listing Page
-   Exact Figma: Ecommerce Web Design - Alibaba Style
 ============================================================ */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -88,7 +87,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .hero-right-card.promo-teal{background:#26A7A7;padding:14px;}
 .promo-text{font-size:14px;font-weight:600;color:#fff;line-height:1.4;}
 
-/* ── DEALS SECTION (Section-sale.png) ── */
+/* ── DEALS SECTION  ── */
 .section-wrap{max-width:1200px;margin:16px auto;padding:0 20px;}
 .deals-section{background:#fff;border:1px solid #E0E0E0;border-radius:8px;padding:20px;display:grid;grid-template-columns:180px 1fr;gap:20px;align-items:start;}
 .deals-left h3{font-size:16px;font-weight:700;color:#1C1C1C;margin-bottom:4px;}
@@ -102,7 +101,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .deal-item-name{font-size:13px;color:#1C1C1C;margin-bottom:6px;}
 .deal-badge{display:inline-block;background:#FFE4E4;color:#E53935;font-size:12px;font-weight:600;padding:2px 10px;border-radius:4px;}
 
-/* ── CATEGORY PRODUCT BLOCKS (Block-items-group.png) ── */
+/* CATEGORY PRODUCT BLOCKS  */
 .block-section{background:#fff;border:1px solid #E0E0E0;border-radius:8px;overflow:hidden;display:grid;grid-template-columns:220px 1fr;}
 .block-left{padding:20px;background:#FFF8F0;display:flex;flex-direction:column;justify-content:space-between;}
 .block-left.blue-bg{background:#EFF6FF;}
@@ -118,7 +117,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .block-item-price{font-size:12px;color:#8B96A5;margin-bottom:10px;}
 .block-item img{width:80px;height:80px;object-fit:contain;margin-left:auto;}
 
-/* ── RECOMMENDED ITEMS (Section-recommend.png) ── */
+/* ── RECOMMENDED ITEMS ── */
 .section-title{font-size:18px;font-weight:700;color:#1C1C1C;margin-bottom:16px;}
 .recommend-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
 .rec-card{background:#fff;border:1px solid #E0E0E0;border-radius:8px;overflow:hidden;padding:16px;cursor:pointer;transition:box-shadow .2s;}
@@ -127,7 +126,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .rec-price{font-size:16px;font-weight:700;color:#1C1C1C;margin-bottom:4px;}
 .rec-name{font-size:13px;color:#8B96A5;line-height:1.4;}
 
-/* ── SERVICES SECTION (Section-service.png) ── */
+/* ── SERVICES SECTION  ── */
 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
 .srv-card{background:#fff;border:1px solid #E0E0E0;border-radius:8px;overflow:hidden;position:relative;cursor:pointer;transition:box-shadow .2s;}
 .srv-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.10);}
@@ -136,7 +135,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer;border:none;background:none
 .srv-icon-wrap svg{width:20px;height:20px;stroke:#2563EB;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
 .srv-name{padding:10px 14px 14px;font-size:13px;color:#1C1C1C;font-weight:500;line-height:1.4;}
 
-/* ── SUPPLIERS BY REGION (Section-country.png) ── */
+/* ── SUPPLIERS BY REGION── */
 .region-section{background:#fff;border:1px solid #E0E0E0;border-radius:8px;padding:20px;}
 .region-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
 .region-item{display:flex;align-items:center;gap:10px;padding:6px 0;cursor:pointer;}

@@ -1,11 +1,3 @@
-/* ============================================================
-   WEEK 3 — product.js
-   Full JavaScript interactivity for Product Details Page
-   Features: Image gallery | Tabs | Star rating | Dropdown
-   selectors | Toast notifications | Save for later | Reviews
-============================================================ */
-
-/* ── TOAST NOTIFICATION ── */
 function showToast(msg, icon = '✓') {
   const toast = document.getElementById('toast');
   document.getElementById('toastMsg').textContent = msg;
@@ -15,12 +7,12 @@ function showToast(msg, icon = '✓') {
   window._toastTimer = setTimeout(() => toast.classList.remove('show'), 2800);
 }
 
-/* ── IMAGE GALLERY SWITCHER ── */
+
 function switchImg(thumbEl, src) {
-  // Switch active thumbnail
+
   document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
   thumbEl.classList.add('active');
-  // Fade main image
+
   const main = document.getElementById('mainImg');
   main.style.opacity = '0.4';
   main.style.transform = 'scale(0.97)';
@@ -30,25 +22,25 @@ function switchImg(thumbEl, src) {
     main.style.transform = 'scale(1)';
   }, 150);
 }
-// Add transition to main image
+
 const mainImg = document.getElementById('mainImg');
 if (mainImg) {
   mainImg.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
 }
 
-/* ── TABS ── */
+
 function openTab(event, tabId) {
-  // Hide all panels
+
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  // Deactivate all tab buttons
+ 
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  // Show selected panel
+
   document.getElementById(tabId).classList.add('active');
-  // Activate clicked button
+
   event.currentTarget.classList.add('active');
 }
 
-/* ── STAR RATING INPUT ── */
+
 let selectedRating = 0;
 
 function setRating(rating) {
@@ -59,7 +51,6 @@ function setRating(rating) {
   });
 }
 
-// Hover effect for star rating
 const starInputEl = document.getElementById('starInput');
 if (starInputEl) {
   const stars = starInputEl.querySelectorAll('span');
@@ -73,7 +64,6 @@ if (starInputEl) {
   });
 }
 
-/* ── SUBMIT REVIEW ── */
 function submitReview() {
   const name  = document.getElementById('reviewName').value.trim();
   const email = document.getElementById('reviewEmail').value.trim();
@@ -83,7 +73,6 @@ function submitReview() {
   if (!name)  { showToast('Please enter your name!', '⚠️'); return; }
   if (!text)  { showToast('Please write your review!', '⚠️'); return; }
 
-  // Add review dynamically to the review list
   const reviewList = document.querySelector('.review-list');
   const starStr = '★'.repeat(selectedRating) + '☆'.repeat(5 - selectedRating);
   const now = new Date();
@@ -111,7 +100,7 @@ function submitReview() {
     </div>`;
   reviewList.prepend(card);
 
-  // Reset form
+  
   selectedRating = 0;
   document.querySelectorAll('#starInput span').forEach(s => { s.classList.remove('lit'); s.style.color = '#E0E0E0'; });
   ['reviewName','reviewEmail','reviewTitle','reviewText'].forEach(id => { const el = document.getElementById(id); if(el) el.value = ''; });
@@ -119,7 +108,7 @@ function submitReview() {
   showToast('Review submitted! Thank you 🎉', '✓');
 }
 
-/* ── HELPFUL BUTTON ── */
+
 function markHelpful(btn) {
   const m = btn.textContent.match(/\((\d+)\)/);
   if (m) {
@@ -132,7 +121,6 @@ function markHelpful(btn) {
   }
 }
 
-/* ── SAVE FOR LATER TOGGLE ── */
 let isSaved = false;
 function toggleSave(el) {
   isSaved = !isSaved;
@@ -153,19 +141,16 @@ function toggleSave(el) {
   }
 }
 
-/* ── SIZE DROPDOWN HANDLER ── */
 function handleSize(select) {
   const val = select.value;
   if (val) showToast(`Size selected: ${val}`, '✓');
 }
 
-/* ── CUSTOMIZATION DROPDOWN HANDLER ── */
 function handleCustomization(select) {
   const val = select.options[select.selectedIndex].text;
   if (val) showToast(`Customization: ${val}`, '✓');
 }
 
-/* ── NAV LINKS ACTIVE STATE ── */
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', function(e) {
     if (this.getAttribute('href') === '#') e.preventDefault();
@@ -174,7 +159,7 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   });
 });
 
-/* ── SEARCH BAR ENTER KEY ── */
+
 const searchInput = document.getElementById('searchInput');
 if (searchInput) {
   searchInput.addEventListener('keydown', function(e) {
@@ -182,7 +167,6 @@ if (searchInput) {
   });
 }
 
-/* ── NEWSLETTER ── */
 function subscribeNl() {
   const e = document.getElementById('nlEmail').value.trim();
   if (!e || !e.includes('@')) { showToast('Please enter a valid email!', '⚠️'); return; }
@@ -190,6 +174,5 @@ function subscribeNl() {
   document.getElementById('nlEmail').value = '';
 }
 
-/* ── BROWSER COMPATIBILITY CHECK ── */
 console.log('✅ Week 3 — Product Details JS loaded successfully!');
 console.log('Browser:', navigator.userAgent.split(') ')[0].split('(')[1]);
